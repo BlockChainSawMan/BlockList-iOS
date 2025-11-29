@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEABECEA2ED816F4000C9D5E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BEABECE92ED816F4000C9D5E /* Alamofire */; };
+		BEABECF02ED8189E000C9D5E /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABECED2ED8189E000C9D5E /* BaseResponse.swift */; };
+		BEABECF12ED8189E000C9D5E /* APIHeaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABECEE2ED8189E000C9D5E /* APIHeaderType.swift */; };
+		BEABECF22ED8189E000C9D5E /* APIPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABECEF2ED8189E000C9D5E /* APIPaths.swift */; };
+		BEABECF42ED83B1C000C9D5E /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABECF32ED83B1C000C9D5E /* ActivityView.swift */; };
+		BEABECF82EDB31C4000C9D5E /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BEABECF72EDB31C4000C9D5E /* Config.xcconfig */; };
+		BEABECFA2EDB31ED000C9D5E /* .gitignore in Sources */ = {isa = PBXBuildFile; fileRef = BEABECF92EDB31EA000C9D5E /* .gitignore */; };
+		BEB1D5B12ECF7E3F00919256 /* BlockListFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5982ECF7E3F00919256 /* BlockListFontModifier.swift */; };
+		BEB1D5B22ECF7E3F00919256 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5992ECF7E3F00919256 /* FontExtension.swift */; };
+		BEB1D5B32ECF7E3F00919256 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D59C2ECF7E3F00919256 /* ColorExtension.swift */; };
+		BEB1D5B42ECF7E3F00919256 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5A02ECF7E3F00919256 /* AnalysisView.swift */; };
+		BEB1D5B52ECF7E3F00919256 /* BlockListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5A12ECF7E3F00919256 /* BlockListApp.swift */; };
+		BEB1D5B62ECF7E3F00919256 /* EvidenceGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5A32ECF7E3F00919256 /* EvidenceGraph.swift */; };
+		BEB1D5B82ECF7E3F00919256 /* GraphWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5A72ECF7E3F00919256 /* GraphWebView.swift */; };
+		BEB1D5B92ECF7E3F00919256 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5A82ECF7E3F00919256 /* LoginView.swift */; };
+		BEB1D5BA2ECF7E3F00919256 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5A92ECF7E3F00919256 /* LottieView.swift */; };
+		BEB1D5BB2ECF7E3F00919256 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5AA2ECF7E3F00919256 /* MainView.swift */; };
+		BEB1D5BC2ECF7E3F00919256 /* ResultReasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5AB2ECF7E3F00919256 /* ResultReasonView.swift */; };
+		BEB1D5BD2ECF7E3F00919256 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5AC2ECF7E3F00919256 /* ResultView.swift */; };
+		BEB1D5BE2ECF7E3F00919256 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5AD2ECF7E3F00919256 /* SplashView.swift */; };
+		BEB1D5BF2ECF7E3F00919256 /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5AE2ECF7E3F00919256 /* Trade.swift */; };
+		BEB1D5C02ECF7E3F00919256 /* TradeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5AF2ECF7E3F00919256 /* TradeListView.swift */; };
+		BEB1D5C12ECF7E3F00919256 /* Glegoo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEB1D5902ECF7E3F00919256 /* Glegoo-Bold.ttf */; };
+		BEB1D5C22ECF7E3F00919256 /* Glegoo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEB1D5912ECF7E3F00919256 /* Glegoo-Regular.ttf */; };
+		BEB1D5C72ECF7E3F00919256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB1D59B2ECF7E3F00919256 /* Assets.xcassets */; };
+		BEB1D5C92ECF7E3F00919256 /* LoadingAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = BEB1D59E2ECF7E3F00919256 /* LoadingAnimation.json */; };
+		BEB1D5CA2ECF7E3F00919256 /* d3.v7.min.js in Resources */ = {isa = PBXBuildFile; fileRef = BEB1D5A22ECF7E3F00919256 /* d3.v7.min.js */; };
+		BEB1D5CB2ECF7E3F00919256 /* graph.html in Resources */ = {isa = PBXBuildFile; fileRef = BEB1D5A42ECF7E3F00919256 /* graph.html */; };
+		BEB1D5CC2ECF7E3F00919256 /* graphScript.js in Resources */ = {isa = PBXBuildFile; fileRef = BEB1D5A52ECF7E3F00919256 /* graphScript.js */; };
+		BEB1D67B2ECF825600919256 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEB1D6782ECF825600919256 /* Pretendard-Medium.otf */; };
+		BEB1D67F2ECF825A00919256 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEB1D67C2ECF825A00919256 /* Pretendard-Regular.otf */; };
+		BEB1D6832ECF825F00919256 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEB1D6802ECF825F00919256 /* Pretendard-SemiBold.otf */; };
+		BEB1D6862ECF826A00919256 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEB1D6842ECF826A00919256 /* Pretendard-Bold.otf */; };
+		BEB1D7812ED80C2400919256 /* CreateQueryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D7732ED80C2400919256 /* CreateQueryString.swift */; };
+		BEB1D7822ED80C2400919256 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D7762ED80C2400919256 /* NetworkConstants.swift */; };
+		BEB1D7892ED80C2400919256 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D7782ED80C2400919256 /* NetworkLogger.swift */; };
+		BEB1D78C2ED80C2400919256 /* PageableDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D7792ED80C2400919256 /* PageableDTO.swift */; };
+		BEB1D7962ED80C2400919256 /* ErrorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D7752ED80C2400919256 /* ErrorDTO.swift */; };
+		BEB1D7A52ED80C2400919256 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D76F2ED80C2400919256 /* APIEndpoint.swift */; };
+		BEB1D7AE2ED80C2400919256 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D7742ED80C2400919256 /* EmptyResponse.swift */; };
+		BEB1D7AF2ED80C2400919256 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D7772ED80C2400919256 /* NetworkError.swift */; };
+		BEB1D7BE2ED80CEF00919256 /* GraphAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D7BD2ED80CEF00919256 /* GraphAPI.swift */; };
+		BEB1D7C02ED80DE000919256 /* PostCheckWalletResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D7BF2ED80DE000919256 /* PostCheckWalletResponseDTO.swift */; };
+		BEE097622ECF6C14003BAD12 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BEE097612ECF6C14003BAD12 /* Lottie */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BEABECED2ED8189E000C9D5E /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		BEABECEE2ED8189E000C9D5E /* APIHeaderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHeaderType.swift; sourceTree = "<group>"; };
+		BEABECEF2ED8189E000C9D5E /* APIPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPaths.swift; sourceTree = "<group>"; };
+		BEABECF32ED83B1C000C9D5E /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		BEABECF72EDB31C4000C9D5E /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		BEABECF92EDB31EA000C9D5E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BEB1D5902ECF7E3F00919256 /* Glegoo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glegoo-Bold.ttf"; sourceTree = "<group>"; };
+		BEB1D5912ECF7E3F00919256 /* Glegoo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glegoo-Regular.ttf"; sourceTree = "<group>"; };
+		BEB1D5982ECF7E3F00919256 /* BlockListFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockListFontModifier.swift; sourceTree = "<group>"; };
+		BEB1D5992ECF7E3F00919256 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		BEB1D59B2ECF7E3F00919256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEB1D59C2ECF7E3F00919256 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		BEB1D59D2ECF7E3F00919256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB1D59E2ECF7E3F00919256 /* LoadingAnimation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LoadingAnimation.json; sourceTree = "<group>"; };
+		BEB1D5A02ECF7E3F00919256 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		BEB1D5A12ECF7E3F00919256 /* BlockListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockListApp.swift; sourceTree = "<group>"; };
+		BEB1D5A22ECF7E3F00919256 /* d3.v7.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = d3.v7.min.js; sourceTree = "<group>"; };
+		BEB1D5A32ECF7E3F00919256 /* EvidenceGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvidenceGraph.swift; sourceTree = "<group>"; };
+		BEB1D5A42ECF7E3F00919256 /* graph.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = graph.html; sourceTree = "<group>"; };
+		BEB1D5A52ECF7E3F00919256 /* graphScript.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = graphScript.js; sourceTree = "<group>"; };
+		BEB1D5A72ECF7E3F00919256 /* GraphWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphWebView.swift; sourceTree = "<group>"; };
+		BEB1D5A82ECF7E3F00919256 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BEB1D5A92ECF7E3F00919256 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		BEB1D5AA2ECF7E3F00919256 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BEB1D5AB2ECF7E3F00919256 /* ResultReasonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultReasonView.swift; sourceTree = "<group>"; };
+		BEB1D5AC2ECF7E3F00919256 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		BEB1D5AD2ECF7E3F00919256 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		BEB1D5AE2ECF7E3F00919256 /* Trade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
+		BEB1D5AF2ECF7E3F00919256 /* TradeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeListView.swift; sourceTree = "<group>"; };
+		BEB1D6782ECF825600919256 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		BEB1D67C2ECF825A00919256 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		BEB1D6802ECF825F00919256 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		BEB1D6842ECF826A00919256 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		BEB1D76F2ED80C2400919256 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		BEB1D7732ED80C2400919256 /* CreateQueryString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQueryString.swift; sourceTree = "<group>"; };
+		BEB1D7742ED80C2400919256 /* EmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
+		BEB1D7752ED80C2400919256 /* ErrorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDTO.swift; sourceTree = "<group>"; };
+		BEB1D7762ED80C2400919256 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		BEB1D7772ED80C2400919256 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BEB1D7782ED80C2400919256 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		BEB1D7792ED80C2400919256 /* PageableDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageableDTO.swift; sourceTree = "<group>"; };
+		BEB1D7BD2ED80CEF00919256 /* GraphAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphAPI.swift; sourceTree = "<group>"; };
+		BEB1D7BF2ED80DE000919256 /* PostCheckWalletResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCheckWalletResponseDTO.swift; sourceTree = "<group>"; };
+		BEE096262ECA0461003BAD12 /* BlockChainSawMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockChainSawMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEE096232ECA0461003BAD12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE097622ECF6C14003BAD12 /* Lottie in Frameworks */,
+				BEABECEA2ED816F4000C9D5E /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEB1D5922ECF7E3F00919256 /* glegoo */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1D5902ECF7E3F00919256 /* Glegoo-Bold.ttf */,
+				BEB1D5912ECF7E3F00919256 /* Glegoo-Regular.ttf */,
+			);
+			path = glegoo;
+			sourceTree = "<group>";
+		};
+		BEB1D5972ECF7E3F00919256 /* pretendard */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1D6842ECF826A00919256 /* Pretendard-Bold.otf */,
+				BEB1D6782ECF825600919256 /* Pretendard-Medium.otf */,
+				BEB1D67C2ECF825A00919256 /* Pretendard-Regular.otf */,
+				BEB1D6802ECF825F00919256 /* Pretendard-SemiBold.otf */,
+			);
+			path = pretendard;
+			sourceTree = "<group>";
+		};
+		BEB1D59A2ECF7E3F00919256 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1D5922ECF7E3F00919256 /* glegoo */,
+				BEB1D5972ECF7E3F00919256 /* pretendard */,
+				BEB1D5982ECF7E3F00919256 /* BlockListFontModifier.swift */,
+				BEB1D5992ECF7E3F00919256 /* FontExtension.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		BEB1D59F2ECF7E3F00919256 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BEABECF92EDB31EA000C9D5E /* .gitignore */,
+				BEB1D59A2ECF7E3F00919256 /* Font */,
+				BEB1D59B2ECF7E3F00919256 /* Assets.xcassets */,
+				BEB1D59C2ECF7E3F00919256 /* ColorExtension.swift */,
+				BEB1D59D2ECF7E3F00919256 /* Info.plist */,
+				BEB1D59E2ECF7E3F00919256 /* LoadingAnimation.json */,
+				BEABECF72EDB31C4000C9D5E /* Config.xcconfig */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BEB1D5B02ECF7E3F00919256 /* BlockChainSawMan */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1D7BA2ED80C5800919256 /* Presentation */,
+				BEB1D7B92ED80C4900919256 /* Graph */,
+				BEB1D59F2ECF7E3F00919256 /* Resource */,
+				BEB1D77B2ED80C2400919256 /* Network */,
+			);
+			path = BlockChainSawMan;
+			sourceTree = "<group>";
+		};
+		BEB1D76E2ED80C2400919256 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1D7BB2ED80C7000919256 /* Graph */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BEB1D77A2ED80C2400919256 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BEABECED2ED8189E000C9D5E /* BaseResponse.swift */,
+				BEABECEE2ED8189E000C9D5E /* APIHeaderType.swift */,
+				BEABECEF2ED8189E000C9D5E /* APIPaths.swift */,
+				BEB1D76F2ED80C2400919256 /* APIEndpoint.swift */,
+				BEB1D7732ED80C2400919256 /* CreateQueryString.swift */,
+				BEB1D7742ED80C2400919256 /* EmptyResponse.swift */,
+				BEB1D7752ED80C2400919256 /* ErrorDTO.swift */,
+				BEB1D7762ED80C2400919256 /* NetworkConstants.swift */,
+				BEB1D7772ED80C2400919256 /* NetworkError.swift */,
+				BEB1D7782ED80C2400919256 /* NetworkLogger.swift */,
+				BEB1D7792ED80C2400919256 /* PageableDTO.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BEB1D77B2ED80C2400919256 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1D76E2ED80C2400919256 /* API */,
+				BEB1D77A2ED80C2400919256 /* Networking */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BEB1D7B92ED80C4900919256 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1D5A22ECF7E3F00919256 /* d3.v7.min.js */,
+				BEB1D5A32ECF7E3F00919256 /* EvidenceGraph.swift */,
+				BEB1D5A42ECF7E3F00919256 /* graph.html */,
+				BEB1D5A52ECF7E3F00919256 /* graphScript.js */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		BEB1D7BA2ED80C5800919256 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1D5A02ECF7E3F00919256 /* AnalysisView.swift */,
+				BEB1D5A12ECF7E3F00919256 /* BlockListApp.swift */,
+				BEB1D5A72ECF7E3F00919256 /* GraphWebView.swift */,
+				BEB1D5A82ECF7E3F00919256 /* LoginView.swift */,
+				BEB1D5A92ECF7E3F00919256 /* LottieView.swift */,
+				BEB1D5AA2ECF7E3F00919256 /* MainView.swift */,
+				BEB1D5AB2ECF7E3F00919256 /* ResultReasonView.swift */,
+				BEB1D5AC2ECF7E3F00919256 /* ResultView.swift */,
+				BEB1D5AD2ECF7E3F00919256 /* SplashView.swift */,
+				BEB1D5AE2ECF7E3F00919256 /* Trade.swift */,
+				BEB1D5AF2ECF7E3F00919256 /* TradeListView.swift */,
+				BEABECF32ED83B1C000C9D5E /* ActivityView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BEB1D7BB2ED80C7000919256 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1D7BC2ED80C8100919256 /* DTO */,
+				BEB1D7BD2ED80CEF00919256 /* GraphAPI.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		BEB1D7BC2ED80C8100919256 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1D7BF2ED80DE000919256 /* PostCheckWalletResponseDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		BEE0961D2ECA0461003BAD12 = {
+			isa = PBXGroup;
+			children = (
+				BEB1D5B02ECF7E3F00919256 /* BlockChainSawMan */,
+				BEE096272ECA0461003BAD12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEE096272ECA0461003BAD12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEE096262ECA0461003BAD12 /* BlockChainSawMan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEE096252ECA0461003BAD12 /* BlockChainSawMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE096472ECA0464003BAD12 /* Build configuration list for PBXNativeTarget "BlockChainSawMan" */;
+			buildPhases = (
+				BEE096222ECA0461003BAD12 /* Sources */,
+				BEE096232ECA0461003BAD12 /* Frameworks */,
+				BEE096242ECA0461003BAD12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockChainSawMan;
+			packageProductDependencies = (
+				BEE097612ECF6C14003BAD12 /* Lottie */,
+				BEABECE92ED816F4000C9D5E /* Alamofire */,
+			);
+			productName = BlockChainSawMan;
+			productReference = BEE096262ECA0461003BAD12 /* BlockChainSawMan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEE0961E2ECA0461003BAD12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					BEE096252ECA0461003BAD12 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = BEE096212ECA0461003BAD12 /* Build configuration list for PBXProject "BlockChainSawMan" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEE0961D2ECA0461003BAD12;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BEE0975F2ECF6BED003BAD12 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				BEABECE82ED816F4000C9D5E /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BEE096272ECA0461003BAD12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEE096252ECA0461003BAD12 /* BlockChainSawMan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEE096242ECA0461003BAD12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB1D6862ECF826A00919256 /* Pretendard-Bold.otf in Resources */,
+				BEB1D5C12ECF7E3F00919256 /* Glegoo-Bold.ttf in Resources */,
+				BEB1D5C22ECF7E3F00919256 /* Glegoo-Regular.ttf in Resources */,
+				BEB1D5C72ECF7E3F00919256 /* Assets.xcassets in Resources */,
+				BEABECF82EDB31C4000C9D5E /* Config.xcconfig in Resources */,
+				BEB1D67B2ECF825600919256 /* Pretendard-Medium.otf in Resources */,
+				BEB1D67F2ECF825A00919256 /* Pretendard-Regular.otf in Resources */,
+				BEB1D5C92ECF7E3F00919256 /* LoadingAnimation.json in Resources */,
+				BEB1D5CA2ECF7E3F00919256 /* d3.v7.min.js in Resources */,
+				BEB1D6832ECF825F00919256 /* Pretendard-SemiBold.otf in Resources */,
+				BEB1D5CB2ECF7E3F00919256 /* graph.html in Resources */,
+				BEB1D5CC2ECF7E3F00919256 /* graphScript.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEE096222ECA0461003BAD12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB1D5B12ECF7E3F00919256 /* BlockListFontModifier.swift in Sources */,
+				BEB1D5B22ECF7E3F00919256 /* FontExtension.swift in Sources */,
+				BEB1D5B32ECF7E3F00919256 /* ColorExtension.swift in Sources */,
+				BEB1D5B42ECF7E3F00919256 /* AnalysisView.swift in Sources */,
+				BEB1D7C02ED80DE000919256 /* PostCheckWalletResponseDTO.swift in Sources */,
+				BEB1D5B52ECF7E3F00919256 /* BlockListApp.swift in Sources */,
+				BEB1D5B62ECF7E3F00919256 /* EvidenceGraph.swift in Sources */,
+				BEB1D5B82ECF7E3F00919256 /* GraphWebView.swift in Sources */,
+				BEB1D5B92ECF7E3F00919256 /* LoginView.swift in Sources */,
+				BEB1D5BA2ECF7E3F00919256 /* LottieView.swift in Sources */,
+				BEB1D7812ED80C2400919256 /* CreateQueryString.swift in Sources */,
+				BEB1D7822ED80C2400919256 /* NetworkConstants.swift in Sources */,
+				BEB1D7892ED80C2400919256 /* NetworkLogger.swift in Sources */,
+				BEB1D78C2ED80C2400919256 /* PageableDTO.swift in Sources */,
+				BEB1D7962ED80C2400919256 /* ErrorDTO.swift in Sources */,
+				BEB1D7BE2ED80CEF00919256 /* GraphAPI.swift in Sources */,
+				BEB1D7A52ED80C2400919256 /* APIEndpoint.swift in Sources */,
+				BEABECF42ED83B1C000C9D5E /* ActivityView.swift in Sources */,
+				BEABECF02ED8189E000C9D5E /* BaseResponse.swift in Sources */,
+				BEABECF12ED8189E000C9D5E /* APIHeaderType.swift in Sources */,
+				BEABECF22ED8189E000C9D5E /* APIPaths.swift in Sources */,
+				BEB1D7AE2ED80C2400919256 /* EmptyResponse.swift in Sources */,
+				BEABECFA2EDB31ED000C9D5E /* .gitignore in Sources */,
+				BEB1D7AF2ED80C2400919256 /* NetworkError.swift in Sources */,
+				BEB1D5BB2ECF7E3F00919256 /* MainView.swift in Sources */,
+				BEB1D5BC2ECF7E3F00919256 /* ResultReasonView.swift in Sources */,
+				BEB1D5BD2ECF7E3F00919256 /* ResultView.swift in Sources */,
+				BEB1D5BE2ECF7E3F00919256 /* SplashView.swift in Sources */,
+				BEB1D5BF2ECF7E3F00919256 /* Trade.swift in Sources */,
+				BEB1D5C02ECF7E3F00919256 /* TradeListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BEE096452ECA0464003BAD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEABECF72EDB31C4000C9D5E /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9S44MNK86W;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/BlockChainSawMan/Resource/Info.plist\n";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = BlockList;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEE096462ECA0464003BAD12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEABECF72EDB31C4000C9D5E /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9S44MNK86W;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/BlockChainSawMan/Resource/Info.plist\n";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = BlockList;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEE096482ECA0464003BAD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEABECF72EDB31C4000C9D5E /* Config.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9S44MNK86W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/BlockChainSawMan/Resource/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BlockList;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BlockChainSawMan.BlockChainSawMan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEE096492ECA0464003BAD12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEABECF72EDB31C4000C9D5E /* Config.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9S44MNK86W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/BlockChainSawMan/Resource/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BlockList;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BlockChainSawMan.BlockChainSawMan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEE096212ECA0461003BAD12 /* Build configuration list for PBXProject "BlockChainSawMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE096452ECA0464003BAD12 /* Debug */,
+				BEE096462ECA0464003BAD12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEE096472ECA0464003BAD12 /* Build configuration list for PBXNativeTarget "BlockChainSawMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE096482ECA0464003BAD12 /* Debug */,
+				BEE096492ECA0464003BAD12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEABECE82ED816F4000C9D5E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		BEE0975F2ECF6BED003BAD12 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 4.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BEABECE92ED816F4000C9D5E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEABECE82ED816F4000C9D5E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		BEE097612ECF6C14003BAD12 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEE0975F2ECF6BED003BAD12 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BEE0961E2ECA0461003BAD12 /* Project object */;
+}

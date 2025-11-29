@@ -1,0 +1,10 @@
+//
+//  git.swift
+//  BlockChainSawMan
+//
+//  Created by 정태우 on 11/29/25.
+//
+
+*.xcconfig
+*.plist
+.DS_Store
