@@ -21,6 +21,8 @@ struct ResultReasonView: View {
     @Binding var patterns2: [String]
     @Binding var data: EvidenceGraph
     @Binding var data2: EvidenceGraph
+    @Binding var status: String
+    @Binding var status2: String
     @State var isByLink: Bool = true
     @State var isSharePresented: Bool = false
     @State var showToast: Bool = false
@@ -237,7 +239,7 @@ struct ResultReasonView: View {
                         }
                     } else {
                         Button {
-                            sendToSlack(address: walletAddress, riskScore: dangerScore, status: "상", secondAddress: secondWalletAddress, riskScore2: dangerScore2, status2: "중")
+                            sendToSlack(address: walletAddress, riskScore: dangerScore, status: status, secondAddress: secondWalletAddress, riskScore2: dangerScore2, status2: status2)
                         } label: {
                             Text("슬랙으로 전송하기")
                                 .blockListFont(font: .BlockListSemibold16, color: .black)

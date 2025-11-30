@@ -21,6 +21,8 @@ struct AnalysisView: View {
     @State var patterns2: [String] = ["5개 지갑 > 1개 집중", "해커 지갑 0000로부터 3단계 연결", "24시간 내 비정상적 거래량 증가"]
     @State var graphData: EvidenceGraph = EvidenceGraph.dummy
     @State var graphData2: EvidenceGraph = EvidenceGraph.dummy
+    @State var status: String = ""
+    @State var status2: String = ""
     @State private var timer: Timer? = nil
     @State private var reasonNum: Int = 0
     @State private var goNext: Bool = false
@@ -34,7 +36,7 @@ struct AnalysisView: View {
                 .ignoresSafeArea()
                 .background(
                     NavigationLink(
-                        destination: ResultView(walletAddress: $walletAddress, secondWalletAddress: $secondWalletAddress, dangerScore: $dangerScore, dangerScore2: $dangerScore2, reason: $reason, reason2: $reason2, explanation: $explanation, patterns: $patterns, explanation2: $explanation2, patterns2: $patterns2, data: $graphData, data2: $graphData2),
+                        destination: ResultView(walletAddress: $walletAddress, secondWalletAddress: $secondWalletAddress, dangerScore: $dangerScore, dangerScore2: $dangerScore2, reason: $reason, reason2: $reason2, explanation: $explanation, patterns: $patterns, explanation2: $explanation2, patterns2: $patterns2, status: $status, status2: $status2, data: $graphData, data2: $graphData2),
                         isActive: $goNext
                     ) { EmptyView() }
                 )
@@ -180,6 +182,7 @@ struct AnalysisView: View {
                         reason = first.explanation
                         explanation = first.explanationSummary
                         patterns = first.explanationBullet
+                        status = first.status
                         let topEdges = Array(first.evidenceGraph.edges.prefix(6))
                         let connectedNodeIds = Set(topEdges.flatMap { [$0.source, $0.target] })
                         let topNodes = first.evidenceGraph.nodes.filter { connectedNodeIds.contains($0.id) }
@@ -192,6 +195,7 @@ struct AnalysisView: View {
                         reason2 = second.explanation
                         explanation2 = second.explanationSummary
                         patterns2 = second.explanationBullet
+                        status2 = second.status
                         let topEdges = Array(second.evidenceGraph.edges.prefix(6))
                         let connectedNodeIds = Set(topEdges.flatMap { [$0.source, $0.target] })
                         let topNodes = second.evidenceGraph.nodes.filter { connectedNodeIds.contains($0.id) }

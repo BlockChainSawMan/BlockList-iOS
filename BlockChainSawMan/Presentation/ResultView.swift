@@ -19,6 +19,8 @@ struct ResultView: View {
     @Binding var patterns: [String]
     @Binding var explanation2: String
     @Binding var patterns2: [String]
+    @Binding var status: String
+    @Binding var status2: String
     @Binding var data: EvidenceGraph
     @Binding var data2: EvidenceGraph
     
@@ -131,7 +133,7 @@ struct ResultView: View {
                 Spacer()
                 
                 NavigationLink {
-                    ResultReasonView(walletAddress: $walletAddress, secondWalletAddress: $secondWalletAddress, dangerScore: $dangerScore, dangerScore2: $dangerScore2, explanation: $explanation, reason: $reason, patterns: $patterns, explanation2: $explanation2, reason2: $reason2, patterns2: $patterns2, data: $data, data2: $data2, isByLink: false)
+                    ResultReasonView(walletAddress: $walletAddress, secondWalletAddress: $secondWalletAddress, dangerScore: $dangerScore, dangerScore2: $dangerScore2, explanation: $explanation, reason: $reason, patterns: $patterns, explanation2: $explanation2, reason2: $reason2, patterns2: $patterns2, data: $data, data2: $data2, status: $status, status2: $status2, isByLink: false)
                 } label: {
                     Text("상세 분석 결과 확인하기")
                         .blockListFont(font: .BlockListSemibold16, color: .black)
