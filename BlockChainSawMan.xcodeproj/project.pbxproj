@@ -11,7 +11,6 @@
 		BEABECF02ED8189E000C9D5E /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABECED2ED8189E000C9D5E /* BaseResponse.swift */; };
 		BEABECF12ED8189E000C9D5E /* APIHeaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABECEE2ED8189E000C9D5E /* APIHeaderType.swift */; };
 		BEABECF22ED8189E000C9D5E /* APIPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABECEF2ED8189E000C9D5E /* APIPaths.swift */; };
-		BEABECF42ED83B1C000C9D5E /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABECF32ED83B1C000C9D5E /* ActivityView.swift */; };
 		BEABECF82EDB31C4000C9D5E /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BEABECF72EDB31C4000C9D5E /* Config.xcconfig */; };
 		BEABECFA2EDB31ED000C9D5E /* .gitignore in Sources */ = {isa = PBXBuildFile; fileRef = BEABECF92EDB31EA000C9D5E /* .gitignore */; };
 		BEB1D5B12ECF7E3F00919256 /* BlockListFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D5982ECF7E3F00919256 /* BlockListFontModifier.swift */; };
@@ -57,7 +56,6 @@
 		BEABECED2ED8189E000C9D5E /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		BEABECEE2ED8189E000C9D5E /* APIHeaderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHeaderType.swift; sourceTree = "<group>"; };
 		BEABECEF2ED8189E000C9D5E /* APIPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPaths.swift; sourceTree = "<group>"; };
-		BEABECF32ED83B1C000C9D5E /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		BEABECF72EDB31C4000C9D5E /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		BEABECF92EDB31EA000C9D5E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		BEB1D5902ECF7E3F00919256 /* Glegoo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glegoo-Bold.ttf"; sourceTree = "<group>"; };
@@ -228,7 +226,6 @@
 				BEB1D5AD2ECF7E3F00919256 /* SplashView.swift */,
 				BEB1D5AE2ECF7E3F00919256 /* Trade.swift */,
 				BEB1D5AF2ECF7E3F00919256 /* TradeListView.swift */,
-				BEABECF32ED83B1C000C9D5E /* ActivityView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -373,7 +370,6 @@
 				BEB1D7962ED80C2400919256 /* ErrorDTO.swift in Sources */,
 				BEB1D7BE2ED80CEF00919256 /* GraphAPI.swift in Sources */,
 				BEB1D7A52ED80C2400919256 /* APIEndpoint.swift in Sources */,
-				BEABECF42ED83B1C000C9D5E /* ActivityView.swift in Sources */,
 				BEABECF02ED8189E000C9D5E /* BaseResponse.swift in Sources */,
 				BEABECF12ED8189E000C9D5E /* APIHeaderType.swift in Sources */,
 				BEABECF22ED8189E000C9D5E /* APIPaths.swift in Sources */,
