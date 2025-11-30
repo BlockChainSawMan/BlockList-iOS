@@ -147,7 +147,6 @@
 		BEB1D59F2ECF7E3F00919256 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				BEABECF92EDB31EA000C9D5E /* .gitignore */,
 				BEB1D59A2ECF7E3F00919256 /* Font */,
 				BEB1D59B2ECF7E3F00919256 /* Assets.xcassets */,
 				BEB1D59C2ECF7E3F00919256 /* ColorExtension.swift */,
@@ -256,6 +255,7 @@
 			children = (
 				BEB1D5B02ECF7E3F00919256 /* BlockChainSawMan */,
 				BEE096272ECA0461003BAD12 /* Products */,
+				BEABECF92EDB31EA000C9D5E /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};

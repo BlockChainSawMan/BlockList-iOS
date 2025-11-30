@@ -49,9 +49,7 @@ struct LoginView: View {
                     .padding(.horizontal, 4)
                 
                 Button {
-                    withAnimation(.easeInOut) {
-                        isExpanded.toggle()
-                    }
+                    isExpanded.toggle()
                 } label: {
                     HStack {
                         Text(companyName.isEmpty ? "회사 검색" : companyName)
@@ -74,6 +72,7 @@ struct LoginView: View {
                     if ID.isEmpty {
                         Text("아이디")
                             .blockListFont(font: .BlockListRegular16, color: .white.opacity(0.8))
+                            .allowsHitTesting(false)
                     }
                     
                     TextField("", text: $ID)
@@ -86,7 +85,6 @@ struct LoginView: View {
                 .cornerRadius(16)
                 .frame(height: 54)
                 .padding(.bottom, 12)
-                .opacity(isExpanded ? 0 : 1.0)
                 
                 HStack {
                     if showPassword {
@@ -94,6 +92,7 @@ struct LoginView: View {
                             if password.isEmpty {
                                 Text("비밀번호")
                                     .blockListFont(font: .BlockListRegular16, color: .white.opacity(0.8))
+                                    .allowsHitTesting(false) 
                             }
                             
                             TextField("", text: $password)
@@ -116,7 +115,7 @@ struct LoginView: View {
                     Button {
                         showPassword.toggle()
                     } label: {
-                        Image(showPassword ? "eye.slash" : "eye")
+                        Image(showPassword ? "eyeSlash" : "eye")
                             .resizable()
                             .frame(width: 24, height: 24)
                     }
@@ -126,7 +125,6 @@ struct LoginView: View {
                 .background(.white.opacity(0.1))
                 .cornerRadius(16)
                 .padding(.bottom, 12)
-                .opacity(isExpanded ? 0 : 1.0)
                 
                 NavigationLink {
                     MainView()
@@ -135,12 +133,10 @@ struct LoginView: View {
                         .blockListFont(font: .BlockListSemibold16, color: .black)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 17.5)
-                        .background(.white)
+                        .background(companyName.isEmpty || ID.isEmpty || password.isEmpty ? Color(hex: "8A8B8F") : .white)
                         .cornerRadius(12)
                 }
                 .padding(.bottom, 20)
-                .opacity(isExpanded ? 0 : 1.0)
-                .opacity(companyName.isEmpty || ID.isEmpty || password.isEmpty ? 0.6 : 1)
                 .disabled(companyName.isEmpty || ID.isEmpty || password.isEmpty)
                 
                 Spacer()
@@ -154,10 +150,8 @@ struct LoginView: View {
                     ForEach(options, id: \.self) { option in
                         Button {
                             companyName = option
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                                withAnimation {
-                                    isExpanded = false
-                                }
+                            withAnimation {
+                                isExpanded = false
                             }
                         } label: {
                             HStack {
@@ -180,6 +174,12 @@ struct LoginView: View {
                     }
                 }
                 .background(.white.opacity(0.2))
+                .background(
+                    Image("background")
+                        .resizable()
+                        .scaledToFill()
+                        .ignoresSafeArea()
+                )
                 .cornerRadius(12)
                 .padding(.horizontal, 16)
                 .offset(y: 30)
