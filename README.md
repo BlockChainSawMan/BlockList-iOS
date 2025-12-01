@@ -3,7 +3,7 @@ Blocklist : 온체인 기반 스테이블 코인 거래 AML 서비스
 
 ## 🧑‍💻 개발 환경 및 기술 스택
 
-<img src="https://img.shields.io/badge/Xcode-147EFB?style=flat-square&logo=xcode&logoColor=white"> <img src="https://img.shields.io/badge/SwiftUI-0CA6FF?style=flat-square&logo=swift&logoColor=white"><img src="https://img.shields.io/badge/Alamofire-FF5722?style=flat-square&logo=swift&logoColor=white"> <img src="https://img.shields.io/badge/URL_Scheme-4A90E2?style=flat-square&logo=internet-explorer&logoColor=white">
+<img src="https://img.shields.io/badge/Xcode-147EFB?style=flat-square&logo=xcode&logoColor=white"> <img src="https://img.shields.io/badge/SwiftUI-0CA6FF?style=flat-square&logo=swift&logoColor=white"> <img src="https://img.shields.io/badge/Alamofire-FF5722?style=flat-square&logo=swift&logoColor=white"> <img src="https://img.shields.io/badge/URL_Scheme-4A90E2?style=flat-square&logo=internet-explorer&logoColor=white">
 
 
 ## 🚧 설계
