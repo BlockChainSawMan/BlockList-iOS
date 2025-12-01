@@ -8,7 +8,7 @@ Blocklist : 온체인 기반 스테이블 코인 거래 AML 서비스
 
 ## 🚧 설계
 
-### 시스템 아키텍처
+### 📉 시스템 아키텍처
  MVVM + Clean Architecture
  ![MVVM-Architecture png](https://github.com/user-attachments/assets/05a77d12-0f5c-4a97-b646-58721e0c8216)
 
@@ -69,3 +69,17 @@ BlockChainSawMan
 │
 └──  README.md   
 ```
+
+## 📂 AI Part
+
+### 📱 iOS-Based AML Risk Visualization & Collaborative System Development
+
+<img width="2816" height="1504" alt="Gemini_Generated_Image_84wl8a84wl8a84wl" src="https://github.com/user-attachments/assets/f1430f50-ba2d-47cb-9129-b35db56b8a84" />
+
+본 프로젝트는 AI파트에서 구현한 분석 로직을 모바일 환경에서 직관적으로 확인하고, 팀원과 신속하게 공유할 수 있는 iOS 클라이언트 애플리케이션을 구축하는 과정입니다.
+
+개발의 첫 단추인 앱 기본 구조 및 네트워크 구축 단계에서는 유지보수와 확장성을 고려하여 MVVM 패턴과 Clean Architecture를 기반으로 앱을 설계하였습니다. 공통 UI 컴포넌트와 디자인 시스템(컬러/폰트)을 정립하여 일관된 사용자 경험을 제공하도록 했으며, 통신 계층에는 Alamofire를 적용하여 서버 API와의 안정적인 데이터 송수신 환경을 마련하였습니다. 특히 서버로부터 전달받는 위험 점수와 그래프 데이터(JSON)를 효율적으로 처리하기 위해 정교한 Request/Response DTO 매핑과 에러 핸들링 로직을 구현하였습니다.
+
+핵심 기능인 위험도 분석 및 그래프 시각화 단계에서는 사용자가 지갑 주소를 입력했을 때, 즉각적으로 위험 등급을 파악할 수 있는 시각화 인터페이스를 구현하였습니다. 특히, 네이티브 앱 환경에서 복잡한 네트워크 그래프를 표현하기 위해 WebView와 D3.js를 연동하는 하이브리드 방식을 채택하였습니다. 이를 통해 'Evidence Graph'를 렌더링하고, JavaScript와 Swift 간의 브리지(Bridge)를 연결하여 노드 터치 시 반응하는 인터랙티브한 경험을 제공했습니다. 또한, 두 개의 지갑을 동시에 비교 분석할 수 있는 기능을 추가하여 교차 검증의 편의성을 높였습니다.
+
+마지막 외부 연동 및 협업 기능 구축 단계에서는 분석 결과의 활용도를 극대화하기 위해 Slack 및 DeepLink 기술을 도입하였습니다. 분석 화면에서 버튼 하나로 위험 점수와 요약 정보를 Slack 채널로 전송하는 Webhook 기능을 구현하였으며, 메시지 내에 **URL Scheme(DeepLink)**을 심어 팀원이 링크를 클릭하면 즉시 앱이 실행되어 해당 지갑의 상세 분석 화면으로 이동하도록 자동화된 워크플로우를 완성하였습니다.
