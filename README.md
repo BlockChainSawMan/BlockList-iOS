@@ -8,7 +8,6 @@ Blocklist : 온체인 기반 스테이블 코인 거래 AML 서비스
 ## 🚧 설계
 
 ### 📉 시스템 아키텍처
- MVVM + Clean Architecture
  ![MVVM-Architecture png](https://github.com/user-attachments/assets/05a77d12-0f5c-4a97-b646-58721e0c8216)
 
 ### 📂 iOS Part Directory
